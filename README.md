@@ -4,4 +4,4 @@
 * React
 * Axios
 * Bootstrap 
-* infinite scrolling
+* Infinite scrolling
