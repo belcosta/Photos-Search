@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Search from "./components/Search";
+import { useState } from "react";
+import Results from "./components/Results";
+import usePhotoSearch from "./components/usePhotoSearch";
 
 function App() {
+  const [query, setQuery] = useState("");
+  const [pageNumber, setPageNumber] = useState(1);
+  const [searchOn, setSearchOn] = useState(false);
+
+  const [photos, hasMore] = usePhotoSearch(query, pageNumber, searchOn);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
+      <Results 
+      photos={photos} 
+      hasMore={hasMore} 
+      setPageNumber={setPageNumber} />
     </div>
   );
 }
