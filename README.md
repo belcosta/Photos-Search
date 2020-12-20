@@ -1,3 +1,7 @@
 # Search Photos
 
-Technologies used: React, Axios, Bootstrap, and infinite scrolling.
+####Technologies used: 
+* React
+* Axios
+* Bootstrap 
+* infinite scrolling
