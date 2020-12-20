@@ -1,6 +1,6 @@
 # Search Photos
 
-####Technologies used: 
+#### Technologies used: 
 * React
 * Axios
 * Bootstrap 
