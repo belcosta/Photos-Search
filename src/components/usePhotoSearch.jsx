@@ -20,7 +20,6 @@ export default function usePhotoSearch(query, pageNumber, searchOn) {
         `https://api.unsplash.com/search/collections/?client_id=j9bQjfT_YyUFBte48Ewb8Q58-tYlHNiThtbzHJ8Y6oE&query=${query}&page=${pageNumber}`
       )
       .then((res) => {
-        console.log(res.data.results);
         setPhotos([...photos, ...res.data.results]);
         //if the condition inside of parentheses is true, it will change the value of hasMore to true
         setHasMore(res.data.total_pages > pageNumber)

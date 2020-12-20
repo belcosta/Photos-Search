@@ -15,7 +15,6 @@ export default function Search(props) {
         `https://api.unsplash.com/search/collections/?client_id=j9bQjfT_YyUFBte48Ewb8Q58-tYlHNiThtbzHJ8Y6oE&query=${input}`
       )
       .then((res) => {
-        console.log(res.data.results);
         props.setPhotos(res.data.results);
       })
       .catch((err) => {
