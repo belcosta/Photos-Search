@@ -1,7 +1,8 @@
 # Search Photos
 
+
 #### Technologies used: 
 * React
-* Axios
+* API (Axios)
 * Bootstrap 
 * Infinite scrolling
