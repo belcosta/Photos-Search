@@ -112,7 +112,7 @@ main {
   }
   .search {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     margin: 1em 0.5em;
   }
   .search input,
