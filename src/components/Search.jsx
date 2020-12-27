@@ -22,7 +22,7 @@ export default function Search(props) {
       });
   };
   return (
-    <div>
+    <div className="header">
       <TextField
         label="Searched item"
         size="small"
