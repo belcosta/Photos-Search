@@ -13,13 +13,16 @@ code {
     monospace;
 }
 header {
+  height: 50vh;
+}
+.bg {
   background-image: url("/home/dci/Documents/React/PicPhotos/photos/src/images/greenleaves.jpeg");
   background-size: contain;
   height: 30vh;
 }
-section {
+.search {
   height: 30vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  border: 5px red solid;
 }

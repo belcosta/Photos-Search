@@ -12,16 +12,13 @@ function App() {
   const [photos, hasMore] = usePhotoSearch(query, pageNumber, searchOn);
   return (
     <div>
-      <header></header>
-      <main>
-        <section>
-          <Search
-            class='search'
-            query={query}
-            setQuery={setQuery}
-            setSearchOn={setSearchOn}
-          />
+      <header>
+        <div class='bg'></div>
+        <section class='search'>
+          <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
         </section>
+      </header>
+      <main>
         <Results
           photos={photos}
           hasMore={hasMore}
