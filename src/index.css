@@ -19,7 +19,6 @@ header {
 }
 section {
   height: 30vh;
-  border: 2px red solid;
   display: flex;
   align-items: center;
   justify-content: center;
