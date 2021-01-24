@@ -5,10 +5,11 @@
   "homepage": "https://belccarvalho.github.io/Photos-Search/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/styles": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
     "gh-pages": "^3.1.0",
     "react": "^17.0.1",

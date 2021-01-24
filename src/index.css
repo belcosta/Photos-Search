@@ -14,15 +14,52 @@ code {
 }
 header {
   height: 50vh;
-}
-.bg {
-  background-image: url("/home/dci/Documents/React/PicPhotos/photos/src/images/greenleaves.jpeg");
-  background-size: contain;
-  height: 30vh;
-}
-.search {
-  height: 30vh;
+  background: url("/home/dci/Documents/React/PicPhotos/photos/src/images/maxresdefault.png")
+    top right no-repeat;
+  background-color: rgb(225, 225, 225);
+  height: 90vh;
   display: flex;
-  justify-content: center;
-  border: 5px red solid;
+  justify-content: flex-start;
+}
+
+.search {
+  height: 15vh;
+  width: fit-content;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 3px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 20px;
+  margin: 7em;
+  padding: 1em;
+}
+.search input {
+  align-self: center;
+  justify-self: center;
+  background-color: inherit;
+  margin: 1em;
+  border: none;
+  border-radius: 10px;
+  /* box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3); */
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 7px;
+  height: 48;
+  padding: 2em 0;
+}
+.search button {
+  margin: 1em;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 7px;
+  height: 48;
+  padding: 0;
+  align-self: flex-end;
+}
+main {
+  padding: 6em;
 }

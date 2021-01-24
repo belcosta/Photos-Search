@@ -13,10 +13,7 @@ function App() {
   return (
     <div>
       <header>
-        <div class='bg'></div>
-        <section class='search'>
-          <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
-        </section>
+        <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
       </header>
       <main>
         <Results
