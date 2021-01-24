@@ -27,38 +27,40 @@ header {
   width: fit-content;
   align-self: flex-end;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  border: 3px rgba(0, 0, 0, 0.5) solid;
-  border-radius: 20px;
+  color: rgb(117, 117, 117);
   margin: 7em;
-  padding: 1em;
+  padding: 2em;
 }
 .search input {
   align-self: center;
   justify-self: center;
   background-color: inherit;
   margin: 1em;
-  border: none;
-  border-radius: 10px;
-  /* box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3); */
+  border: 3px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
   font-size: 2em;
   font-weight: 600;
   letter-spacing: 7px;
   height: 48;
-  padding: 2em 0;
+  padding: 2em;
+  cursor: pointer;
 }
 .search button {
-  margin: 1em;
-  border: 0;
+  color: inherit;
+  margin: 0 1em;
+  background-color: inherit;
+  border: white;
   border-radius: 10px;
   box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
   font-size: 2em;
   font-weight: 600;
   letter-spacing: 7px;
   height: 48;
-  padding: 0;
-  align-self: flex-end;
+  padding: 2rem;
+  align-self: center;
 }
 main {
   padding: 6em;

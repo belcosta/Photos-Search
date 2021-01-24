@@ -23,8 +23,6 @@ export default function Search(props) {
     <div className='search'>
       <input
         placeholder='Search for a pic here..'
-        size='medium'
-        // variant='outlined'
         value={props.query}
         //dont use parentesis
         onInput={getValue}
