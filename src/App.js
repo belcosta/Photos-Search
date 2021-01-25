@@ -17,7 +17,12 @@ function App() {
           src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDWZFBlcr5FmGTFvxsz22J2i73drsBqLLbQ&usqp=CAU'
           alt='draw of camera'
         ></img>
-        {/* <img src='images/camera.png' alt='draw of camera'></img> */}
+        {/* <img
+          src='./components/images/camera.jpg'
+          alt='draw of camera'
+          width='304'
+          height='228'
+        ></img> */}
         <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
       </header>
       <main>

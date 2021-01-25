@@ -28,8 +28,6 @@ export default function Search(props) {
         onInput={getValue}
       />
       <button
-        // variant='outlined'
-        // color='primary'
         onClick={() => {
           //in this way we just change the previous value to the opposite value,
           props.setSearchOn((prevSearchOn) => !prevSearchOn);

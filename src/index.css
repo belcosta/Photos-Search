@@ -58,6 +58,11 @@ header img {
   color: rgb(117, 117, 117);
   cursor: pointer;
 }
+.search input:focus {
+  outline: none;
+  border: 5px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 20px;
+}
 .search button {
   margin: 0 1em;
   padding: 0.4em;
@@ -66,6 +71,10 @@ header img {
   letter-spacing: 4px;
   color: rgb(206, 127, 113);
   justify-self: center;
+}
+.search button:focus {
+  outline: none;
+  border: 5px rgba(206, 127, 113, 0.8) solid;
 }
 /* END OF HEADER */
 /* RESULTS */
