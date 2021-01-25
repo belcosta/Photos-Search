@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(114, 92, 116); */
+  background-color: rgb(104, 116, 92);
+  /* background-image: url("https://i.pinimg.com/originals/17/dd/2e/17dd2ebd7b2b85a2d40066f497d953b6.jpg"); */
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(225, 225, 225);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr, 1fr;
+}
+header img {
+  justify-self: flex-end;
+  max-width: 100%;
+  width: 100%;
+  max-height: 340px;
+}
+.search {
+  margin: 1em 0;
+  padding-bottom: 1em;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(117, 117, 117);
+}
+.search input,
+.search button {
+  background-color: rgb(225, 225, 225);
+  box-shadow: 0 3px 5px 2px rgba(206, 127, 113, 0.6);
+  font-size: 1em;
+  font-weight: 600;
+  height: 30;
+}
+.search input {
+  margin: 1em;
+  padding: 1em;
+  border: 3px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 20px;
+  letter-spacing: 3px;
+  justify-self: center;
+  color: rgb(117, 117, 117);
+  cursor: pointer;
+}
+.search input:focus {
+  outline: none;
+  border: 5px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 20px;
+}
+.search button {
+  margin: 0 1em;
+  padding: 0.4em;
+  border: 3px rgba(206, 127, 113, 0.5) solid;
+  border-radius: 13px;
+  letter-spacing: 4px;
+  color: rgb(206, 127, 113);
+  justify-self: center;
+}
+.search button:focus {
+  outline: none;
+  border: 5px rgba(206, 127, 113, 0.8) solid;
+}
+/* END OF HEADER */
+/* RESULTS */
+main {
+  padding: 1.5em;
+}
+.card-columns {
+  column-count: 1;
+}
+.card {
+  border: 3px rgba(206, 127, 113, 0.5) solid;
+  box-shadow: 0 3px 5px 2px rgba(206, 127, 113, 0.6);
+  border-radius: 13px;
+}
+.card-body {
+  background-color: rgba(104, 116, 92, 0.3);
+  padding: 0.5em;
+}
+.card-title {
+  text-align: center;
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 600;
+  /* letter-spacing: 3px; */
+  font-size: 13px;
+  margin: 0;
+  padding: 0.5em;
+}
+/* END OF RESULTS */
+@media screen and (min-width: 425px) {
+  /* HEADER */
+  .search {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em 0.5em;
+  }
+  .search input,
+  .search button {
+    margin: 1em 0.5em;
+    padding: 1em 0.5em;
+  }
+}
+/* END OF HEADER */
+@media screen and (min-width: 530px) {
+  /* HEADER */
+  header {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  header img {
+    order: 2;
+    margin: 1em;
+  }
+  .search {
+    order: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0.5em;
+    margin: 0;
+  }
+  .search input {
+    padding: 1em 0.5em;
+  }
+  .search button {
+    padding: 0.5em;
+  }
+  /* END OF HEADER */
+}
+@media screen and (min-width: 700px) {
+  .card-columns {
+    column-count: 2;
+    grid-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  /* HEADER */
+  .search input,
+  .search button {
+    font-size: 1.2em;
+    font-weight: 700;
+    height: 40;
+  }
+  /* END OF HEADER */
+}
+@media screen and (min-width: 1000px) {
+  /* HEADER */
+  header img {
+    max-width: 100%;
+    max-height: 520px;
+  }
+  .search {
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: start;
+  }
+
+  .search input,
+  .search button {
+    margin-left: 1em;
+    padding-left: 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 40;
+  }
+  /* END OF HEADER */
+}
+@media screen and (min-width: 1300px) {
+  /* HEADER */
+  .search {
+    justify-content: center;
+  }
+  /* END OF HEADER */
+  /* RESULTS */
+  .card-columns {
+    column-count: 3;
+    grid-column-gap: 3rem;
+    column-gap: 3rem;
+  }
+  /* END OF RESULTS */
+}
+
+@media screen and (min-width: 1600px) {
+  .card-columns {
+    column-count: 4;
+    grid-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
