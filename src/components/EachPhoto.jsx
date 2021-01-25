@@ -1,9 +1,6 @@
 import React from "react";
 
 export default function EachPhoto(props) {
-  let description =
-    props.photo.cover_photo.alt_description.charAt(0).toUpperCase() +
-    props.photo.cover_photo.alt_description.slice(1);
   return (
     <div>
       <div className='card'>
@@ -14,7 +11,7 @@ export default function EachPhoto(props) {
         />
         <div className='card-body'>
           <h5 className='card-title'>
-            {description ? description : props.photo.title}
+            {props.photo.cover_photo.alt_description || props.photo.title}
           </h5>
         </div>
       </div>
