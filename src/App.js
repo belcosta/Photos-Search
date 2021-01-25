@@ -13,7 +13,11 @@ function App() {
   return (
     <div>
       <header>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDWZFBlcr5FmGTFvxsz22J2i73drsBqLLbQ&usqp=CAU'></img>
+        <img
+          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDWZFBlcr5FmGTFvxsz22J2i73drsBqLLbQ&usqp=CAU'
+          alt='draw of camera'
+        ></img>
+        {/* <img src='images/camera.png' alt='draw of camera'></img> */}
         <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
       </header>
       <main>
