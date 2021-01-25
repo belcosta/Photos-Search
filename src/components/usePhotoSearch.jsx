@@ -1,7 +1,7 @@
 //when we create a Hook, it usually starts with "use"
 //we don't read anything in Hook
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function usePhotoSearch(query, pageNumber, searchOn) {
@@ -20,7 +20,6 @@ export default function usePhotoSearch(query, pageNumber, searchOn) {
         `https://api.unsplash.com/search/collections/?client_id=j9bQjfT_YyUFBte48Ewb8Q58-tYlHNiThtbzHJ8Y6oE&query=${query}&page=${pageNumber}`
       )
       .then((res) => {
-        console.log(res.data.results);
         setPhotos([...photos, ...res.data.results]);
         //if the condition inside of parentheses is true, it will change the value of hasMore to true
         setHasMore(res.data.total_pages > pageNumber);

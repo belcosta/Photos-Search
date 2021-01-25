@@ -70,7 +70,10 @@ header img {
 /* END OF HEADER */
 /* RESULTS */
 main {
-  padding: 6em;
+  padding: 1.5em;
+}
+.card-columns {
+  column-count: 1;
 }
 .card {
   border: 3px rgba(206, 127, 113, 0.5) solid;
@@ -79,12 +82,16 @@ main {
 }
 .card-body {
   background-color: rgba(104, 116, 92, 0.3);
+  padding: 0.5em;
 }
 .card-title {
   text-align: center;
   font-family: "Hachi Maru Pop", cursive;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-weight: 600;
+  /* letter-spacing: 3px; */
+  font-size: 13px;
+  margin: 0;
+  padding: 0.5em;
 }
 /* END OF RESULTS */
 @media screen and (min-width: 425px) {
@@ -127,7 +134,13 @@ main {
   }
   /* END OF HEADER */
 }
-
+@media screen and (min-width: 700px) {
+  .card-columns {
+    column-count: 2;
+    grid-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
 @media screen and (min-width: 850px) {
   /* HEADER */
   .search input,
@@ -166,4 +179,19 @@ main {
     justify-content: center;
   }
   /* END OF HEADER */
+  /* RESULTS */
+  .card-columns {
+    column-count: 3;
+    grid-column-gap: 3rem;
+    column-gap: 3rem;
+  }
+  /* END OF RESULTS */
+}
+
+@media screen and (min-width: 1600px) {
+  .card-columns {
+    column-count: 4;
+    grid-column-gap: 2rem;
+    column-gap: 2rem;
+  }
 }
