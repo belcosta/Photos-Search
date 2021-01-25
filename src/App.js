@@ -13,6 +13,7 @@ function App() {
   return (
     <div>
       <header>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDWZFBlcr5FmGTFvxsz22J2i73drsBqLLbQ&usqp=CAU'></img>
         <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
       </header>
       <main>

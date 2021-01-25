@@ -13,55 +13,104 @@ code {
     monospace;
 }
 header {
-  height: 50vh;
-  background: url("/home/dci/Documents/React/PicPhotos/photos/src/images/maxresdefault.png")
-    top right no-repeat;
+  width: 100%;
   background-color: rgb(225, 225, 225);
-  height: 90vh;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 }
-
-.search {
-  height: 15vh;
-  width: fit-content;
+header img {
   align-self: flex-end;
+}
+.search {
+  margin: 2em 0;
+  padding-bottom: 1em;
+  width: 100%;
+  align-self: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   color: rgb(117, 117, 117);
-  margin: 7em;
-  padding: 2em;
+  background-color: rgb(225, 225, 225);
+}
+.search input,
+.search button {
+  background-color: rgb(225, 225, 225);
+
+  box-shadow: 0 3px 5px 2px rgba(206, 127, 113, 0.6);
+  font-size: 1em;
+  font-weight: 600;
+  height: 30;
 }
 .search input {
-  align-self: center;
-  justify-self: center;
-  background-color: inherit;
   margin: 1em;
+  padding: 1em;
   border: 3px rgba(0, 0, 0, 0.5) solid;
   border-radius: 20px;
-  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
-  font-size: 2em;
-  font-weight: 600;
-  letter-spacing: 7px;
-  height: 48;
-  padding: 2em;
+  letter-spacing: 3px;
+  align-self: center;
+  justify-self: center;
+  color: rgb(117, 117, 117);
   cursor: pointer;
 }
 .search button {
-  color: inherit;
   margin: 0 1em;
-  background-color: inherit;
-  border: white;
-  border-radius: 10px;
-  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
-  font-size: 2em;
-  font-weight: 600;
-  letter-spacing: 7px;
-  height: 48;
-  padding: 2rem;
-  align-self: center;
+  padding: 0.4em;
+  border: 3px rgba(206, 127, 113, 0.5) solid;
+  border-radius: 13px;
+  letter-spacing: 4px;
+  color: rgb(206, 127, 113);
+  align-self: flex-end;
+  justify-self: center;
 }
 main {
   padding: 6em;
+}
+
+@media screen and (min-width: 425px) {
+  .search {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em 0.5em;
+  }
+  .search input,
+  .search button {
+    margin: 1em 0.5em;
+    padding: 1em 0.5em;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  header {
+    flex-direction: row;
+    height: 230px;
+  }
+  header img {
+    order: 2;
+    align-self: flex-start;
+    margin: 1em;
+  }
+  .search {
+    order: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1em 0.5em;
+  }
+  .search input,
+  .search button {
+    margin: 1em 0.5em;
+    padding: 1em 0.5em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header img {
+    flex-grow: 4;
+  }
+  .search {
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-end;
+  }
+
+  .search input,
+  .search button {
+  }
 }
