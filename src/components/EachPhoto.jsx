@@ -6,7 +6,7 @@ export default function EachPhoto(props) {
       <div className='card'>
         <img
           className='card-img-top'
-          src={props.photo.cover_photo.urls.regular}
+          src={props.photo.cover_photo.urls.full}
           alt='Card pic'
         />
         <div className='card-body'>
