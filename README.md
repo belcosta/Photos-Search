@@ -16,4 +16,4 @@ This project was done during the one-year Web Development Course. Its objective 
 
 ###Responsive Webdesign
 
-<img src="./README-files/responsiveness.gif" width=100%>
+<img align="center" src="./README-files/responsiveness.gif" width=80%>
