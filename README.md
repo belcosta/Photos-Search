@@ -8,7 +8,7 @@ Photos provided by [Unsplash](https://unsplash.com/developers)
 
 #### Main used Technologies:
 
-- - React - React Hooks - API (Axios) - Bootstrap - Infinite scrolling
+- React - React Hooks - API (Axios) - Bootstrap - Infinite scrolling
 
 <img src="./README_files/results_screen_shot.png" width=100%>
 
