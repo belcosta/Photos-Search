@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Photos-Search/static/css/main.681f2ee0.chunk.css",
+    "main.css": "/Photos-Search/static/css/main.c1f4c804.chunk.css",
     "main.js": "/Photos-Search/static/js/main.4441a093.chunk.js",
     "main.js.map": "/Photos-Search/static/js/main.4441a093.chunk.js.map",
     "runtime-main.js": "/Photos-Search/static/js/runtime-main.4121dee2.js",
@@ -10,7 +10,7 @@
     "static/js/2.a8725849.chunk.js.map": "/Photos-Search/static/js/2.a8725849.chunk.js.map",
     "index.html": "/Photos-Search/index.html",
     "static/css/2.43b2b750.chunk.css.map": "/Photos-Search/static/css/2.43b2b750.chunk.css.map",
-    "static/css/main.681f2ee0.chunk.css.map": "/Photos-Search/static/css/main.681f2ee0.chunk.css.map",
+    "static/css/main.c1f4c804.chunk.css.map": "/Photos-Search/static/css/main.c1f4c804.chunk.css.map",
     "static/js/2.a8725849.chunk.js.LICENSE.txt": "/Photos-Search/static/js/2.a8725849.chunk.js.LICENSE.txt",
     "static/media/camera.6cb70562.png": "/Photos-Search/static/media/camera.6cb70562.png"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.4121dee2.js",
     "static/css/2.43b2b750.chunk.css",
     "static/js/2.a8725849.chunk.js",
-    "static/css/main.681f2ee0.chunk.css",
+    "static/css/main.c1f4c804.chunk.css",
     "static/js/main.4441a093.chunk.js"
   ]
 }
