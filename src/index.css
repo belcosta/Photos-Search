@@ -22,17 +22,18 @@ header {
   height: fit-content;
   background-color: rgb(225, 225, 225);
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr, 1fr;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 header img {
   justify-self: flex-end;
   max-width: 100%;
   width: 100%;
-  max-height: 340px;
+  max-height: 350px;
+  min-width: 320px;
 }
 .search {
-  margin: 1em 0;
+  margin: 1em;
   padding-bottom: 1em;
   width: 100%;
   justify-self: center;
@@ -47,6 +48,7 @@ header img {
   font-size: 1em;
   font-weight: 600;
   height: 30;
+  margin: 0.5em;
 }
 .search input {
   margin: 1em;
@@ -105,6 +107,9 @@ main {
 /* END OF RESULTS */
 @media screen and (min-width: 425px) {
   /* HEADER */
+  header img {
+    max-width: 400px;
+  }
   .search {
     flex-direction: row;
     justify-content: space-around;
@@ -117,15 +122,34 @@ main {
   }
 }
 /* END OF HEADER */
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 500px) {
+  /* HEADER */
+  header {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr, 1fr;
+  }
+  header img {
+    margin: 1em 0.5em;
+    min-width: 350px;
+    max-width: 450px;
+    max-height: 450px;
+  }
+
+  .search button {
+    padding: 0.5em;
+  }
+  /* END OF HEADER */
+}
+@media screen and (min-width: 720px) {
   /* HEADER */
   header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
   header img {
+    max-height: 450px;
+    min-width: 400px;
     order: 2;
-    margin: 1em;
   }
   .search {
     order: 1;
@@ -135,18 +159,8 @@ main {
     padding: 1em 0.5em;
     margin: 0;
   }
-  .search input {
-    padding: 1em 0.5em;
-  }
-  .search button {
-    padding: 0.5em;
-  }
-  /* END OF HEADER */
-}
-@media screen and (min-width: 700px) {
   .card-columns {
     column-count: 2;
-    grid-column-gap: 2rem;
     column-gap: 2rem;
   }
 }
@@ -154,7 +168,6 @@ main {
   /* HEADER */
   .search input,
   .search button {
-    font-size: 1.2em;
     font-weight: 700;
     height: 40;
   }
@@ -163,8 +176,8 @@ main {
 @media screen and (min-width: 1000px) {
   /* HEADER */
   header img {
-    max-width: 100%;
-    max-height: 520px;
+    /* max-height: 700px; */
+    min-width: 530px;
   }
   .search {
     flex-direction: row;
@@ -176,7 +189,6 @@ main {
   .search button {
     margin-left: 1em;
     padding-left: 1em;
-    font-size: 1.5em;
     font-weight: 700;
     height: 40;
   }
@@ -184,6 +196,9 @@ main {
 }
 @media screen and (min-width: 1300px) {
   /* HEADER */
+  header img {
+    max-height: 500px;
+  }
   .search {
     justify-content: center;
   }
@@ -191,7 +206,6 @@ main {
   /* RESULTS */
   .card-columns {
     column-count: 3;
-    grid-column-gap: 3rem;
     column-gap: 3rem;
   }
   /* END OF RESULTS */
@@ -200,7 +214,6 @@ main {
 @media screen and (min-width: 1600px) {
   .card-columns {
     column-count: 4;
-    grid-column-gap: 2rem;
     column-gap: 2rem;
   }
 }

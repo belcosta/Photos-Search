@@ -3,6 +3,7 @@ import Search from "./components/Search";
 import { useState } from "react";
 import Results from "./components/Results";
 import usePhotoSearch from "./components/usePhotoSearch";
+import Camera from "./components/images/camera.png";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -13,16 +14,7 @@ function App() {
   return (
     <div>
       <header>
-        <img
-          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDWZFBlcr5FmGTFvxsz22J2i73drsBqLLbQ&usqp=CAU'
-          alt='draw of camera'
-        ></img>
-        {/* <img
-          src='./components/images/camera.jpg'
-          alt='draw of camera'
-          width='304'
-          height='228'
-        ></img> */}
+        <img src={Camera} alt='draw of camera' width='304' height='240'></img>
         <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
       </header>
       <main>
