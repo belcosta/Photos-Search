@@ -6,11 +6,7 @@ This project was done during the one-year Web Development Course. Its objective 
 
 #### Main used Technologies:
 
-- React
-- React Hooks
-- API (Axios)
-- Bootstrap
-- Infinite scrolling
+- - React - React Hooks - API (Axios) - Bootstrap - Infinite scrolling
 
 <img src="./README_files/results_screen_shot.png" width=100%>
 

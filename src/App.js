@@ -24,6 +24,15 @@ function App() {
           setPageNumber={setPageNumber}
         />
       </main>
+      <footer>
+        <p>
+          Photos provided by{" "}
+          <a href='https://unsplash.com/developers'>Unsplash</a>
+        </p>
+        <p id='author'>
+          Made by <a href='https://github.com/belccarvalho'> Isabel Costa </a>
+        </p>
+      </footer>
     </div>
   );
 }
