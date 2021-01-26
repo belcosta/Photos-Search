@@ -12,7 +12,7 @@ This project was done during the one-year Web Development Course. Its objective 
 - Bootstrap
 - Infinite scrolling
 
-<img src="./README-files/results_screen_shot.png" width=100%>
+<img src="./README_files/results_screen_shot.png" width=100%>
 
 ###Responsive Webdesign
 
