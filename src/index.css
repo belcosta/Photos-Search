@@ -127,6 +127,7 @@ footer a {
   text-decoration: none;
   font-style: italic;
   color: rgb(206, 127, 113);
+  padding: 0.4em;
 }
 footer a:hover {
   font-style: bold;
