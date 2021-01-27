@@ -14,4 +14,4 @@ _Photos provided by [Unsplash](https://unsplash.com/developers)_.
 
 ### Responsive Webdesign
 
-<img align="center" src="./README-files/responsiveness.gif" width=80%>
+<img align="center" src="https://github.com/belcosta/Photos-Search/blob/main/README_files/responsiveness.gif" width=80%>
