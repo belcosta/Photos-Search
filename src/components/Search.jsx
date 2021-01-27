@@ -7,6 +7,9 @@ export default function Search(props) {
     props.setQuery(e.target.value);
   };
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
   const fetchPhotos = (input) => {
     axios
       .get(
@@ -21,22 +24,25 @@ export default function Search(props) {
   };
   return (
     <div className='search'>
-      <input
-        placeholder='Search for a pic here..'
-        value={props.query}
-        //dont use parentesis
-        onInput={getValue}
-      />
-      <button
-        onClick={() => {
-          //in this way we just change the previous value to the opposite value,
-          props.setSearchOn((prevSearchOn) => !prevSearchOn);
-          //this second approach is also possible, but I should import also the searchOn variable.
-          // props.setSearchOn(!searchOn);
-        }}
-      >
-        SEARCH
-      </button>
+      <form onSubmit={onSubmit}>
+        <input
+          placeholder='Search for a pic here..'
+          value={props.query}
+          //dont use parentesis
+          onInput={getValue}
+        />
+        <button
+          type='submit'
+          onClick={() => {
+            //in this way we just change the previous value to the opposite value,
+            props.setSearchOn((prevSearchOn) => !prevSearchOn);
+            //this second approach is also possible, but I should import also the searchOn variable.
+            // props.setSearchOn(!searchOn);
+          }}
+        >
+          SEARCH
+        </button>
+      </form>
     </div>
   );
 }
