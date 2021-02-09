@@ -2,7 +2,7 @@
 
 Click [here](https://belccarvalho.github.io/Photos-Search/) to access the page!
 
-This project was done during the one-year Web Development Course. Its objective is to make use of API. The infinite-scrolling was implemented as extra feature during the tutoring activities with the help of [Alice Rez](https://github.com/Alice-Rez).
+This project was done during the one-year-full-time Web Development Course. Its objective is to make use of API. The infinite-scrolling was implemented as extra feature during the tutoring activities with the help of [Alice Rez](https://github.com/Alice-Rez).
 
 _Photos provided by [Unsplash](https://unsplash.com/developers)_.
 
