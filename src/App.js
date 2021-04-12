@@ -17,7 +17,7 @@ function App() {
         <img src={Camera} alt='draw of camera' width='304' height='240'></img>
         <Search query={query} setQuery={setQuery} setSearchOn={setSearchOn} />
       </header>
-      <main>
+      <main className="p-5">
         <Results
           photos={photos}
           hasMore={hasMore}

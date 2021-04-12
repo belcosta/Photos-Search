@@ -80,9 +80,6 @@ header img {
 }
 /* END OF HEADER */
 /* RESULTS */
-main {
-  padding: 1.5em;
-}
 .card-columns {
   column-count: 1;
 }
